@@ -282,6 +282,10 @@ const getTotalSupply = async() => {
     return "total supply is: "+totsupply;
 }
 
+const getBalanceOfOwner = async() =>{
+    let bal = await contract.methods.BalanceOfOwner().call();
+    return ""
+}
 const returnAllValues = async() =>{
     console.log(await getTotalSupply());
 
